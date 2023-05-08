@@ -1,0 +1,1 @@
+(()=>{"use strict";"".concat(4)})();
