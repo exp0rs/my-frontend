@@ -17,7 +17,7 @@ export function buildConfiguration(
 			path: paths.out,
 			clean: true,
 		},
-		module: buildLoaders(),
+		module: buildLoaders(buildOptions),
 		plugins: buildPlugins(buildOptions),
 		resolve: buildResolves(),
 		devtool: isDev ? 'inline-source-map' : undefined,
