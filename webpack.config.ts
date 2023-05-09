@@ -8,7 +8,7 @@ export default (env: BuildEnv) => {
 		port: env.port || 3000,
 		mode: env.mode || 'development',
 		paths: {
-			entry: path.resolve(__dirname, 'src', 'index.ts'),
+			entry: path.resolve(__dirname, 'src', 'index.tsx'),
 			out: path.resolve(__dirname, 'dist'),
 			html: path.resolve(__dirname, 'public', 'index.html'),
 		},
