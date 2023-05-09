@@ -5,8 +5,8 @@ export function buildDevServer({
 	port,
 }: BuildOptions): WebpackDevServerConfiguration {
 	return {
-		port,
+		port: port,
 		open: true,
-		static: './dist',
+		historyApiFallback: true,
 	};
 }
