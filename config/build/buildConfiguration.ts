@@ -22,6 +22,6 @@ export function buildConfiguration(
 		devServer: isDev ? buildDevServer(buildOptions) : undefined,
 		module: buildLoaders(buildOptions),
 		plugins: buildPlugins(buildOptions),
-		resolve: buildResolves(),
+		resolve: buildResolves(buildOptions),
 	};
 }
