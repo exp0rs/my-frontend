@@ -1,15 +1,25 @@
 import { Route, Routes } from 'react-router-dom';
 import { Counter } from './components/Counter';
-import './index.scss';
+import './styles/index.scss';
 import { Link } from 'react-router-dom';
 import { AboutPageAsync } from './pages/AboutPage/AboutPage.async';
 import { MainPageAsync } from './pages/MainPage/MainPage.async';
 import { Suspense } from 'react';
+import { useTheme } from './theme/useThene';
+
 export const App = () => {
+	const { theme, toggleTheme } = useTheme();
 	return (
-		<div className='app'>
-			<Link to={'/'}>Главная страница</Link>
-			<Link to={'/about'}>О нас</Link>
+		<div className={`app ${theme}`}>
+			<nav className='app__header'>
+				<Link className='app__header' to={'/'}>
+					Main
+				</Link>
+				<Link className='app__header' to={'/about'}>
+					About
+				</Link>
+				<button onClick={toggleTheme}>toggle</button>
+			</nav>
 			<Suspense fallback={<div>Loading...</div>}>
 				<Routes>
 					<Route path={'/'} element={<MainPageAsync />} />
