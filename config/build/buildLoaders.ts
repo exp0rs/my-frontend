@@ -4,7 +4,8 @@ import { BuildOptions } from './types/build';
 
 export function buildLoaders({ isDev }: BuildOptions): ModuleOptions {
 	const svgrLoader = {
-		test: /\.(svg)$/,
+		test: /\.svg$/i,
+		issuer: /\.[jt]sx?$/,
 		use: ['@svgr/webpack'],
 	};
 	const fileLoader = {
