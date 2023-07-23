@@ -4,10 +4,14 @@
 	background-color: var(--bg-second);
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: flex-start;
 	padding: 20px;
 }
+.logo {
+	color: var(--color-first);
+}
 .nav {
+	margin: 0 auto;
 }
 .nav__link {
 	padding: 0 20px 0 0;

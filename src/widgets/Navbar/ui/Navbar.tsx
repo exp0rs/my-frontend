@@ -9,8 +9,8 @@ interface NavbarProps {
 export const Navbar = ({ className }: NavbarProps) => {
 	return (
 		<header className={classNames(cls.header, [className])}>
-			<div className='logo'>logo</div>
-			<nav className='nav'>
+			<div className={cls.logo}>LOGO</div>
+			<nav className={cls.nav}>
 				<AppLink className={cls.nav__link} to={'/'}>
 					Main
 				</AppLink>
