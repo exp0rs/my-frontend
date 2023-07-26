@@ -2,6 +2,7 @@ module.exports = {
 	env: {
 		browser: true,
 		es2021: true,
+		jest: true,
 	},
 	extends: [
 		'eslint:recommended',
@@ -38,6 +39,7 @@ module.exports = {
 		quotes: ['error', 'single'],
 		semi: ['error', 'always'],
 		'i18next/no-literal-string': ['error', { markupOnly: true }],
+		'max-len': ['error', { ignoreComments: true }],
 	},
 	settings: {
 		react: {
