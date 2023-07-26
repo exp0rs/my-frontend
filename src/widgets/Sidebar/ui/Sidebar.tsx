@@ -20,8 +20,12 @@ export const Sidebar = ({ className }: SidebarProps) => {
 				[cls.collapsed]: collapsed,
 			})}
 		>
-			<Button theme={ThemeButton.CLEAR} onClick={onToggle}>
-				{collapsed ? '>>' : '<<'}
+			<Button
+				className={classNames(cls.side, [], { [cls.hiden]: !collapsed })}
+				theme={ThemeButton.CLEAR}
+				onClick={onToggle}
+			>
+				{'>>'}
 			</Button>
 			<div
 				className={classNames(cls.switchers, [], { [cls.hiden]: collapsed })}
@@ -30,6 +34,13 @@ export const Sidebar = ({ className }: SidebarProps) => {
 				<Suspense>
 					<LanguageSwitcher />
 				</Suspense>
+				<Button
+					className={classNames(cls.bottom)}
+					theme={ThemeButton.DEFAULT}
+					onClick={onToggle}
+				>
+					{'<<'}
+				</Button>
 			</div>
 		</div>
 	);
