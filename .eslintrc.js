@@ -7,6 +7,7 @@ module.exports = {
 		'eslint:recommended',
 		'plugin:@typescript-eslint/recommended',
 		'plugin:react/recommended',
+		'plugin:i18next/recommended',
 	],
 	overrides: [
 		{
@@ -24,12 +25,11 @@ module.exports = {
 		ecmaVersion: 'latest',
 		sourceType: 'module',
 	},
-	plugins: ['@typescript-eslint', 'react'],
+	plugins: ['@typescript-eslint', 'react', 'i18next'],
 	rules: {
 		'react/react-in-jsx-scope': 'off',
 		'react/jsx-props-no-spreading': 'off',
 		'react/jsx-filename-extension': [1, { extensions: ['.ts', '.tsx'] }],
-		'react/jsx-indent': [2, { indentMode: 4, ignoreTernaryOperator: true }],
 		'import/prefer-default-export': 'off',
 		'no-unused-vars': 'off',
 		'@typescript-eslint/no-unused-vars': 'warn',
@@ -37,6 +37,7 @@ module.exports = {
 		indent: ['error', 'tab'],
 		quotes: ['error', 'single'],
 		semi: ['error', 'always'],
+		'i18next/no-literal-string': ['error', { markupOnly: true }],
 	},
 	settings: {
 		react: {

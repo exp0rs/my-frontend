@@ -1,19 +1,22 @@
 .header {
-	width: 100%;
-	height: var(--navbar-height);
-	background-color: var(--bg-second);
-	display: flex;
-	align-items: center;
-	justify-content: flex-start;
-	padding: 20px;
+    width: 100%;
+    height: var(--navbar-height);
+    background-color: var(--bg-second);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
 }
+
 .logo {
-	color: var(--color-first);
-	letter-spacing: 2px;
+    color: var(--color-first);
+    letter-spacing: 2px;
 }
+
 .nav {
-	margin: 0 auto;
+    margin: 0 auto;
 }
+
 .nav__link {
-	padding: 0 20px 0 0;
+    padding: 0 20px 0 0;
 }
