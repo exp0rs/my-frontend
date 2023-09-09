@@ -39,7 +39,7 @@ module.exports = {
 		quotes: ['error', 'single'],
 		semi: ['error', 'always'],
 		'i18next/no-literal-string': ['error', { markupOnly: true }],
-		'max-len': ['error', { ignoreComments: true }],
+		'max-len': ['error', { ignoreComments: true, code: 90 }],
 	},
 	settings: {
 		react: {
