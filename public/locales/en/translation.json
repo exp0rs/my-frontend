@@ -1,5 +1,9 @@
 {
 	"Тестовый пример": "Test example",
 	"Перевод": "Translate",
-	"Сраница не найдена": "Page not found"
+	"Сраница не найдена": "Page not found",
+	"Произошла ошибка": "Some error",
+	"Обновить страницу": "Reload page",
+	"Пробросить ошибку": "Throw error",
+	"Главная": "Main"
 }
