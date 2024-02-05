@@ -1,8 +1,7 @@
 {
 	"folders": [
 		{
-			"path": ".",
-			"name": "root"
+			"path": "."
 		},
 		{
 			"path": "./src/app"
@@ -23,5 +22,7 @@
 			"path": "./src/shared"
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "root"
+	}
 }
