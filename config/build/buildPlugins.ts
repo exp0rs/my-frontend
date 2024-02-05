@@ -2,12 +2,14 @@ import webpack from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import { BuildOptions } from './types/build';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
+import { BundleAnalyzerPlugin } from 'webpack-bundle-analyzer';
 
 export function buildPlugins({
 	paths,
 	isDev,
 }: BuildOptions): webpack.WebpackPluginInstance[] {
 	return [
+		new BundleAnalyzerPlugin({ openAnalyzer: false }),
 		new webpack.ProgressPlugin(),
 		new HtmlWebpackPlugin({
 			template: paths.html,
